@@ -1,0 +1,30 @@
+/* styles.css */
+
+.myapp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light background for contrast */
+}
+
+.appvide {
+  position: relative;
+}
+
+video {
+  border: 2px solid #ccc; /* Optional: Add a border to the video */
+  border-radius: 8px; /* Optional: Round corners */
+  width: 540px;
+  height: 650px;
+  object-fit: cover; /* Ensures the video fits within the specified dimensions */
+}
+
+.appcanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 540px;
+  height: 650px;
+  pointer-events: none; /* Allow interactions with the video beneath */
+}
